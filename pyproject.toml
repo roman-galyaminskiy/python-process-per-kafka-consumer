@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "processperconsumer"
+version = "0.1.0"
+description = ""
+authors = ["Roman Galyaminskiy <roman.galyaminskiy@dfi.ai>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "0.111.1"
+uvicorn = {extras = ["standard"], version = "0.30.1"}
+pydantic-settings = "2.3.4"
+aiokafka = "0.11.0"
+pydantic = "2.8.2"
+
+[tool.poetry.group.dev.dependencies]
+pylint = "3.2.5"
+isort = "5.13.2"
+black = "24.4.2"
+pylint-pydantic = "0.3.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,20 @@
+{
+  "binding": {
+    "kafka": {
+      "bootstrap": {
+        "servers": "localhost:9093"
+      },
+      "incoming": {
+        "group": {
+          "id": "test"
+        },
+        "topic": "test",
+        "partitions": 1,
+        "poll": {
+          "timeout": "PT0.5S"
+        }
+      }
+    }
+  }
+}
+
